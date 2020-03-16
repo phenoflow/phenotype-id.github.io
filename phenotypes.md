@@ -19,7 +19,7 @@ We have produced the first chronological map of human health across 308 physical
 
 | ID | Phenotype | Data Sources | Validation |
 |----|-----------|--------------|------------|{% for phenotype in disease_phenotypes %}
-| [{{ phenotype.phenotype_id}}](/phenotypes/{{ phenotype.phenotype_id }}.json) | [{{ phenotype.name }}]({{ phenotype.url }}) | {{ phenotype.data_sources }} | {{ phenotype.validation }} |{% endfor %}
+| [{{ phenotype.phenotype_id}}]({{ phenotype.url }}) | [{{ phenotype.name }}]({{ phenotype.url }}) | {{ phenotype.data_sources }} | {{ phenotype.validation }} |{% endfor %}
 
 
 ### Biomarkers

@@ -54,6 +54,15 @@ layout: post
         </td>
     </tr>
     <tr>
+        <td><strong>Death Code Lists</strong></td>
+        {% assign death_code_list = page.death_code_lists | split: ", " %}
+        <td>{% for code_list in death_code_list %}
+            <a href="{{ code_list }}">{{ code_list | remove_first: "/death/" }}</a>
+            {%- if forloop.last == false %}, {% endif -%}
+            {% endfor %}
+        </td>
+    </tr>
+    <tr>
         <td><strong>Validation</strong></td>
         <td>{{ page.validation }}</td>
     </tr>
