@@ -1,0 +1,87 @@
+---
+layout: post
+---
+<h3 id="metadata">Metadata</h3>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>{{ page.phenotype_id }}</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><strong>Name</strong></td>
+        <td>{{ page.name }}</td>
+    </tr>
+    <tr>
+        <td><strong>Status</strong></td>
+        <td><strong>{{ page.status }}</strong></td>
+    </tr>
+    <tr>
+        <td><strong>Type</strong></td>
+        <td>{{ page.type }}</td>
+    </tr>
+    <tr>
+        <td><strong>Group</strong></td>
+        <td>{{ page.group }}</td>
+    </tr>
+    <tr>
+        <td><strong>Data Sources</strong></td>
+        <td>{{ page.data_sources }}</td>
+    </tr>
+    <tr>
+        <td><strong>Clinical Terminologies</strong></td>
+        <td>{{ page.clinical_terminologies }}</td>
+    </tr>
+
+    <tr>
+        <td><strong>Primary Care Code Lists</strong></td>
+        {% assign primary_care_code_list = page.primary_care_code_lists | split: ", " %}
+        <td>{% for code_list in primary_care_code_list %}
+            <a href="{{ code_list }}">{{ code_list | remove_first: "/primary_care/" }}</a>
+            {%- if forloop.last == false %}, {% endif -%}
+            {% endfor %}
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Secondary Care Code Lists</strong></td>
+        {% assign secondary_care_code_list = page.secondary_care_code_lists | split: ", " %}
+        <td>{% for code_list in secondary_care_code_list %}
+            <a href="{{ code_list }}">{{ code_list | remove_first: "/secondary_care/" }}</a>
+            {%- if forloop.last == false %}, {% endif -%}
+            {% endfor %}
+        </td>
+    </tr>
+    <tr>
+        <td><strong>Validation</strong></td>
+        <td>{{ page.validation }}</td>
+    </tr>
+    <tr>
+        <td><strong>Valid Event Data Range</strong></td>
+        <td>{{ page.valid_event_data_range }}</td>
+    </tr>
+    <tr>
+        <td><strong>Sex</strong></td>
+        <td>{{ page.sex }}</td>
+    </tr>
+    <tr>
+        <td><strong>Authors</strong></td>
+        <td>{{ page.author }}</td>
+    </tr>
+    {%- assign date_format = site.minima.date_format | default: "%-d %b %Y" -%}
+    <tr>
+        <td><strong>Agreement Date</strong></td>
+        <td>{{ page.date | date: date_format }}</td>
+    </tr>
+    <tr>
+        <td><strong>Modified Date</strong></td>
+        <td>{{ page.modified_date | date: date_format }}</td>
+    </tr>
+    <tr>
+        <td><strong>Version</strong></td>
+        <td>{{ page.version }}</td>
+    </tr>
+    </tbody>
+</table>
+{{ content }}
