@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00324 - Esoinophils
-phenotype_id: PHE00324
+title: PHE00322 - Esoinophils
+phenotype_id: PHE00322
 name: Esoinophils
 type: Biomarker
 group: 

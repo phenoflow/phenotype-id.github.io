@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00318 - Unheralded Coronary Death
-phenotype_id: PHE00318
+title: PHE00316 - Unheralded Coronary Death
+phenotype_id: PHE00316
 name: Unheralded Coronary Death
 type: Disease or Syndrome
 group: 

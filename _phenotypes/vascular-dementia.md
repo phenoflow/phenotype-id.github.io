@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00319 - Vascular Dementia
-phenotype_id: PHE00319
+title: PHE00317 - Vascular Dementia
+phenotype_id: PHE00317
 name: Vascular Dementia
 type: Disease or Syndrome
 group: Neurological

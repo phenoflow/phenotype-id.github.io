@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00332 - Ethinic Status
-phenotype_id: PHE00332
+title: PHE00330 - Ethinic Status
+phenotype_id: PHE00330
 name: Ethinic Status
 type: Lifestyle Risk Factor
 group: 

@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00323 - Body Mass Index
-phenotype_id: PHE00323
+title: PHE00321 - Body Mass Index
+phenotype_id: PHE00321
 name: Body Mass Index
 type: Biomarker
 group: 

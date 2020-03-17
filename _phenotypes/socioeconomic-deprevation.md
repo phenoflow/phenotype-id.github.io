@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00336 - Socioeconomic Deprevation
-phenotype_id: PHE00336
+title: PHE00334 - Socioeconomic Deprevation
+phenotype_id: PHE00334
 name: Socioeconomic Deprevation
 type: Lifestyle Risk Factor
 group: 

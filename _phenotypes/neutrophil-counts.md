@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00329 - Neutrophil Counts
-phenotype_id: PHE00329
+title: PHE00327 - Neutrophil Counts
+phenotype_id: PHE00327
 name: Neutrophil Counts
 type: Biomarker
 group: 

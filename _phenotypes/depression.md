@@ -1,15 +1,15 @@
 ---
 layout: phenotype
-title: PHE00314 - Depression
-phenotype_id: PHE00314
+title: PHE00060 - Depression
+phenotype_id: PHE00060
 name: Depression
 type: Disease or Syndrome
-group: Neurological
+group: Psychiatric
 data_sources: Primary care (CPRD), Hospital Admission Data (HES), Mortality Data (ONS)
 clinical_terminologies: Read, ICD-10, ICD-9, OPCS-4
 validation: cross-source, casenote, aetiology, prognosis, genetic external
-primary_care_code_lists: 
-secondary_care_code_lists: 
+primary_care_code_lists: /primary_care/CPRD_dementia.csv
+secondary_care_code_lists: /secondary_care/ICD_dementia.csv
 valid_event_data_range: 01/01/1999 - 01/07/2016
 sex: Female/Male
 author: Julie George, Emily Herrett, Liam Smeeth, Harry Hemingway, Anoop Shah, Spiros Denaxas
@@ -38,7 +38,13 @@ In Hospital Episode Statistics (HES, hospital admission data) we used ICD-10 ter
 **Combining evidence across sources to define and date phenotypes**
 
 <pre>
+"At the specified date, a patient is defined as having had 'Depression' IF they meet the criteria for any of the following on or before the specified date. The earliest date on which the individual meets any of the following criteria on or before the specified date is defined as the first event date:
 
+Primary care
+1. 'Depression' diagnosis or history of diagnosis during a consultation 
+OR
+Secondary care
+1. ALL diagnoses of 'Depression' or history of diagnosis during a hospitalization"
 </pre>
 
 ### Validations

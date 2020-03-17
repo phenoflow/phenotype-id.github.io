@@ -1,15 +1,15 @@
 ---
 layout: phenotype
-title: PHE00309 - Heart Failure
-phenotype_id: PHE00309
+title: PHE00099 - Heart Failure
+phenotype_id: PHE00099
 name: Heart Failure
 type: Disease or Syndrome
 group: Cardiovascular
 data_sources: Primary care (CPRD), Hospital Admission Data (HES), Mortality Data (ONS)
 clinical_terminologies: Read, ICD-10, ICD-9, OPCS-4
 validation: cross-source, casenote, aetiology, prognosis, genetic external
-primary_care_code_lists: 
-secondary_care_code_lists: 
+primary_care_code_lists: /primary_care/CPRD_hf.csv
+secondary_care_code_lists: /secondary_care/ICD_hf.csv
 valid_event_data_range: 01/01/1999 - 01/07/2016
 sex: Female/Male
 author: Julie George, Emily Herrett, Liam Smeeth, Harry Hemingway, Anoop Shah, Spiros Denaxas

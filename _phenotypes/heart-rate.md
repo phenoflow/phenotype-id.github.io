@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00326 - Heart Rate
-phenotype_id: PHE00326
+title: PHE00324 - Heart Rate
+phenotype_id: PHE00324
 name: Heart Rate
 type: Biomarker
 group: 

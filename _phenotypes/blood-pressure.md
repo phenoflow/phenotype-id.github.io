@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00322 - Blood Pressure
-phenotype_id: PHE00322
+title: PHE00320 - Blood Pressure
+phenotype_id: PHE00320
 name: Blood Pressure
 type: Biomarker
 group: 

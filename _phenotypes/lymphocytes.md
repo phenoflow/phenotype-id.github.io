@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00328 - Lymphocytes
-phenotype_id: PHE00328
+title: PHE00326 - Lymphocytes
+phenotype_id: PHE00326
 name: Lymphocytes
 type: Biomarker
 group: 

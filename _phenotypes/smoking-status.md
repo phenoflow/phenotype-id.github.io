@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00335 - Smoking Status
-phenotype_id: PHE00335
+title: PHE00333 - Smoking Status
+phenotype_id: PHE00333
 name: Smoking Status
 type: Lifestyle Risk Factor
 group: 

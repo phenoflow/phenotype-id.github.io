@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00311 - Alzheimer's Disease
-phenotype_id: PHE00311
+title: PHE00310 - Alzheimer's Disease
+phenotype_id: PHE00310
 name: Alzheimer's Disease
 type: Disease or Syndrome
 group: Neurological

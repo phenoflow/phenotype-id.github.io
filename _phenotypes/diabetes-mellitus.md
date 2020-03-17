@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00315 - Diabetes Mellitus
-phenotype_id: PHE00315
+title: PHE00313 - Diabetes Mellitus
+phenotype_id: PHE00313
 name: Diabetes Mellitus
 type: Disease or Syndrome
 group: 

@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00331 - Alcohol Consumption
-phenotype_id: PHE00331
+title: PHE00329 - Alcohol Consumption
+phenotype_id: PHE00329
 name: Alcohol Consumption
 type: Lifestyle Risk Factor
 group: 

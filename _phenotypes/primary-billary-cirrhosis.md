@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00316 - Primary Billary Cirrhosis
-phenotype_id: PHE00316
+title: PHE00314 - Primary Billary Cirrhosis
+phenotype_id: PHE00314
 name: Primary Billary Cirrhosis
 type: Disease or Syndrome
 group: 

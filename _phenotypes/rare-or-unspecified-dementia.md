@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00317 - Rare Or Unspecified Dementia
-phenotype_id: PHE00317
+title: PHE00315 - Rare Or Unspecified Dementia
+phenotype_id: PHE00315
 name: Rare Or Unspecified Dementia
 type: Disease or Syndrome
 group: 

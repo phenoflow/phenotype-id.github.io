@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00310 - Sudden Cardiac Death
-phenotype_id: PHE00310
+title: PHE00309 - Sudden Cardiac Death
+phenotype_id: PHE00309
 name: Sudden Cardiac Death
 type: Disease or Syndrome
 group: Cardiovascular

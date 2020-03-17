@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00312 - Autoimmune Uveitis
-phenotype_id: PHE00312
+title: PHE00311 - Autoimmune Uveitis
+phenotype_id: PHE00311
 name: Autoimmune Uveitis
 type: Disease or Syndrome
 group: 

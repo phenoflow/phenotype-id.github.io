@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00333 - Pregnancy
-phenotype_id: PHE00333
+title: PHE00331 - Pregnancy
+phenotype_id: PHE00331
 name: Pregnancy
 type: Lifestyle Risk Factor
 group: 

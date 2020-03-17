@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00325 - Hdl Cholesterol
-phenotype_id: PHE00325
+title: PHE00323 - Hdl Cholesterol
+phenotype_id: PHE00323
 name: Hdl Cholesterol
 type: Biomarker
 group: 

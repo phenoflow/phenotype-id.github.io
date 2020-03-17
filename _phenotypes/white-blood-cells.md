@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00321 - White Blood Cells
-phenotype_id: PHE00321
+title: PHE00319 - White Blood Cells
+phenotype_id: PHE00319
 name: White Blood Cells
 type: Biomarker
 group: 

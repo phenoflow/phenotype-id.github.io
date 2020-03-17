@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00334 - Sex
-phenotype_id: PHE00334
+title: PHE00332 - Sex
+phenotype_id: PHE00332
 name: Sex
 type: Lifestyle Risk Factor
 group: 

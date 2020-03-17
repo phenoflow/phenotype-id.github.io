@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00320 - Influenza
-phenotype_id: PHE00320
+title: PHE00318 - Influenza
+phenotype_id: PHE00318
 name: Influenza
 type: Disease or Syndrome
 group: Infection

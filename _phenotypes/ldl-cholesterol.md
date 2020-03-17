@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00327 - Ldl Cholesterol
-phenotype_id: PHE00327
+title: PHE00325 - Ldl Cholesterol
+phenotype_id: PHE00325
 name: Ldl Cholesterol
 type: Biomarker
 group: 

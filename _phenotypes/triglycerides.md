@@ -1,7 +1,7 @@
 ---
 layout: phenotype
-title: PHE00330 - Triglycerides
-phenotype_id: PHE00330
+title: PHE00328 - Triglycerides
+phenotype_id: PHE00328
 name: Triglycerides
 type: Biomarker
 group: 

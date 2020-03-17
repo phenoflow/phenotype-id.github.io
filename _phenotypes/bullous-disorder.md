@@ -1,7 +1,7 @@
 ---
 layout: phenotype
 title: PHE00313 - Bullous Disorder
-phenotype_id: PHE00313
+phenotype_id: PHE00312
 name: Bullous Disorder
 type: Disease or Syndrome
 group: 
