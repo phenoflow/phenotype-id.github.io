@@ -1,3 +1,4 @@
+name: Jekyll Algolia
 
 on: [push]
 
