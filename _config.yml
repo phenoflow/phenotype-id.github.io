@@ -38,6 +38,7 @@ plugins:
   - jekyll-redirect-from
 
 collections:
+  # TODO: Add death, primary_care and secondary_care as data collections
   phenotypes:
     sort_by: phenotype_id
     output: true
