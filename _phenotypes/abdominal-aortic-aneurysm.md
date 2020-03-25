@@ -20,6 +20,8 @@ modified_date: 2012-11-23
 version: Revision 2
 ---
 
+
+
 ### Primary Care
 
 In the Clinical Practice Research Datalink (CPRD, primary care data) we ascertained {{ page.name }} cases by searching for Read terms related to an {{ page.name }} diagnosis or evidence of endovascular/transluminal procedures related to the emergency repair of an aneurysmal segment of the aorta.
@@ -28,6 +30,8 @@ In the Clinical Practice Research Datalink (CPRD, primary care data) we ascertai
 
 Read terms are hierarhically organized in top-level chapters i.e. chapter G....00 is related to Circulatory System Diseases and sub-headings i.e. heading G2...00 is related to Hypertensive Heart Disease while G3...00 is related to Ischaemic Heart Disease.
 
+
+
 ### Secondary Care
 
 In Hospital Episode Statistics (HES, hospital admission data) we used ICD-10 terms (see below) for {{ page.name }} diagnosis when marked as the primary diagnosis i.e. the main condition treated or investigated during the relevant episode of healthcare. We used the date of admission to hospital as the date of the event. We additionally searched for OPCS-4 terms indicating the emergency repair of an aneurysmal segment of the aorta.
@@ -35,11 +39,15 @@ In Hospital Episode Statistics (HES, hospital admission data) we used ICD-10 ter
 {% include csv.html csvdata=site.data.secondary_care.ICD_AAA %}
 
 
+
 ### Death
 
 In mortality data, we used ICD-9 and ICD-10 terms (see below) located at the underlying cause of death position:
 
 {% include csv.html csvdata=site.data.death.ICD_AAA %}
+
+
+
 
 ### Implementation
 
@@ -60,6 +68,8 @@ The earliest date on which the individual meets any of the following criteria on
     1.	Diagnosis of AAA as the primary or secondary diagnosis of any hospitalization: arterial_hes: category 4
     2.	Performance of emergency AAA repair procedure recorded: aaa_ops_opcs: category 3
 </pre>
+
+
 
 ### Validations
 
@@ -106,6 +116,9 @@ The earliest date on which the individual meets any of the following criteria on
 | Polymyalgia rheumatica | Associations between polymyalgia rheumatica and giant cell arteritis and 12 cardiovascular diseases. Heart. 2016 Mar;102(5):383-9. doi: 10.1136/heartjnl-2015-308514. Epub 2016 Jan 19 |
 | Lymphocytes | Low eosinophil and low lymphocyte counts and the incidence of 12 cardiovascular diseases: a CALIBER cohort study. Open Heart. 2016 Sep 5;3(2):e000477. doi: 10.1136/openhrt-2016-000477. eCollection 2016. | 
 | Rheumatoid arthritis | Rheumatoid Arthritis and Incidence of Twelve Initial Presentations of Cardiovascular Disease: A Population Record-Linkage Cohort Study in England. PLoS One. 2016 Mar 15;11(3):e0151245. doi: 10.1371/journal.pone.0151245. |
+
+
+
 
 ### Publications
 

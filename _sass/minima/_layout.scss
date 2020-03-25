@@ -2,18 +2,26 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $brand-color-dark;
-  border-bottom: 1px solid $brand-color-light;
   min-height: $spacing-unit * 1.865;
-  line-height: $base-line-height * $base-font-size * 2.25;
+  line-height: $base-line-height * $base-font-size * 5.25;
 
   // Positioning context for the mobile navigation icon
   position: relative;
+
+  background: #3db28c; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #3db28c 0%, #475da7 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #3db28c 0%,#475da7 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #3db28c 0%,#475da7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3db28c', endColorstr='#475da7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  -webkit-box-shadow: 0 0px 8px rgba(0,0,0,0.16), 0 0px 8px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0 0px 8px rgba(0,0,0,0.16), 0 0px 8px rgba(0,0,0,0.23);
+  box-shadow: 0 0px 8px rgba(0,0,0,0.16), 0 0px 8px rgba(0,0,0,0.23);
 }
 
 .site-title {
-  @include relative-font-size(1.625);
-  font-weight: 300;
+  @include relative-font-size(2.625);
+  font-weight: 600;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
@@ -24,7 +32,10 @@
 
   &,
   &:visited {
-    color: $brand-color-dark;
+    color: $color-light;
+  }
+  &:hover {
+    text-decoration: none;
   }
 }
 
@@ -74,16 +85,22 @@
   }
 
   .page-link {
-    color: $text-color;
+    color: $color-light;
     line-height: $base-line-height;
     display: block;
     padding: 5px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
 
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 0;
     }
     margin-left: 20px;
+    &:hover {
+      text-decoration: none;
+      border-bottom: 3px solid $color-orange;
+    }
   }
 
   @media screen and (min-width: $on-medium) {
@@ -122,8 +139,15 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $brand-color-light;
   padding: $spacing-unit 0;
+  background: #3db28c; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #3db28c 0%, #475da7 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #3db28c 0%,#475da7 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #3db28c 0%,#475da7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3db28c', endColorstr='#475da7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  -webkit-box-shadow: 0 0px 8px rgba(0,0,0,0.16), 0 0px 8px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0 0px 8px rgba(0,0,0,0.16), 0 0px 8px rgba(0,0,0,0.23);
+  box-shadow: 0 0px 8px rgba(0,0,0,0.16), 0 0px 8px rgba(0,0,0,0.23);
 }
 
 .footer-heading {
@@ -131,8 +155,20 @@
   margin-bottom: $spacing-unit / 2;
 }
 
+.feed-subscribe {
+  text-align: right;
+  a, &a:visited {
+    color: $color-light;
+    padding: 0 10px;
+  }
+}
+
 .feed-subscribe .svg-icon {
   padding: 5px 5px 2px 0
+}
+
+.footer-logo {
+  max-width: 158px;
 }
 
 .contact-list,
@@ -144,7 +180,7 @@
 .footer-col-wrapper,
 .social-links {
   @include relative-font-size(0.9375);
-  color: $brand-color;
+  color: $color-light;
 }
 
 .footer-col {
@@ -232,6 +268,21 @@
   @include relative-font-size(1.5);
 }
 
+.table-title {
+  background-color: $color-light-bgr;
+  margin: 0;
+  padding: 38px 64px;
+}
+
+a.btn {
+  background-color: $color-orange;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $color-dark-blue;
+  padding: 15px 30px;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
 
 
 /**
@@ -302,8 +353,6 @@
     }
   }
 }
-
-
 
 /**
  * Pagination navbar
