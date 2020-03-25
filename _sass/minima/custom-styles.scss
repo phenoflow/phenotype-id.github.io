@@ -3,28 +3,28 @@
 
 h2 {
   &, h1 {
-  	font-size: $base-h2-size;
-  	font-weight: bold;
-  	color: $color-sea-green;
+    font-size: $base-h2-size;
+    font-weight: bold;
+    color: $color-sea-green;
   }
 
   a.post-link {
 
 
-  	&, &:hover {
-  		color: $color-sea-green;
-  		text-decoration: none;
-  	}
+    &, &:hover {
+      color: $color-sea-green;
+      text-decoration: none;
+    }
   }
 }
 
 .post-content h1, .post-content h2, .post-content h3 {
-	margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 h3 {
-	font-weight: bold;
-	color: $color-dark-blue;
+  font-weight: bold;
+  color: $color-dark-blue;
 }
 
 /**
@@ -32,143 +32,147 @@ h3 {
  */
 
 #navbar {
-	position: absolute;
-	top: 43px;
-	right: $spacing-unit / 2;
-	border-radius: 5px;
-	text-align: right;
+  position: absolute;
+  top: 43px;
+  right: $spacing-unit / 2;
+  border-radius: 5px;
+  text-align: right;
 
-	.nav {
-		li {
-			display: block;
+  .nav {
+    li {
+      display: block;
 
-			@media screen and (min-width: $on-medium) {
-				display: inline-block;
-			}
+      @media screen and (min-width: $on-medium) {
+        display: inline-block;
+      }
 
-			a {
-				@include relative-font-size(1.25);
-				color: $color-dark-blue;
-			    line-height: $base-line-height;
-			    display: block;
-			    padding: 5px 10px;
-			    text-transform: uppercase;
-			    font-weight: bold;
-			    border-bottom: 3px solid transparent;
+      a {
+        @include relative-font-size(1.25);
+        color: $color-dark-blue;
+          line-height: $base-line-height;
+          display: block;
+          padding: 5px 10px;
+          text-transform: uppercase;
+          font-weight: bold;
+          border-bottom: 3px solid transparent;
 
-		        // Gaps between nav items, but not on the last one
-			    &:not(:last-child) {
-			      margin-right: 0;
-			    }
-			    margin-left: 20px;
-			    &:hover {
-			      text-decoration: none;
-			      border-bottom: 3px solid $color-orange;
-			    }
-			    @media screen and (min-width: $on-medium) {
-			    	color: $color-light;
-			    }
-			}
+            // Gaps between nav items, but not on the last one
+          &:not(:last-child) {
+            margin-right: 0;
+          }
+          margin-left: 20px;
+          &:hover {
+            text-decoration: none;
+            border-bottom: 3px solid $color-orange;
+          }
+          @media screen and (min-width: $on-medium) {
+            color: $color-light;
+          }
+      }
       &.active {
         a {
           border-bottom: 3px solid $color-orange;
         }
       }
 
+      .dropdown:hover {
+        background-color: $color-light
+      }
 
-			.dropdown-menu {
-				display: none;
-				float: left;
-			    min-width: 10rem;
-			    padding: .5rem 0;
-			    margin: -.25rem 0 0;
-			    font-size: 1rem;
-			    color: #212529;
-			    text-align: left;
-			    list-style: none;
-			    background-color: #fff;
-			    background-clip: padding-box;
-			    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
-			    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16), 0 0px 8px rgba(0, 0, 0, 0.23);
-			    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
-			    z-index: 1;
 
-			    @media screen and (max-width: $on-medium) {
-			    	display: block;
-				    -webkit-box-shadow: none;
-				    -moz-box-shadow: none;
-				    box-shadow: none;
-				    text-align: right;
-			    }
+      .dropdown-menu {
+        display: none;
+        float: left;
+          min-width: 10rem;
+          padding: .5rem 0;
+          margin: -.25rem 0 0;
+          font-size: 1rem;
+          color: #212529;
+          text-align: left;
+          list-style: none;
+          background-color: #fff;
+          background-clip: padding-box;
+          -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+          -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16), 0 0px 8px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+          z-index: 1;
 
-			    li {
-			    	display: block;
+          @media screen and (max-width: $on-medium) {
+            display: block;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            text-align: right;
+          }
 
-			    	a {
-			    		color: $color-grey;
-			    		margin-left: 0;
-			    		@include relative-font-size(1);
+          li {
+            display: block;
+
+            a {
+              color: $color-grey;
+              margin-left: 0;
+              @include relative-font-size(1);
               border: 0;
-			    	}
-			    	&:hover {
-			    		background-color: $color-dark-blue;
+            }
+            &:hover {
+              background-color: $color-dark-blue;
 
-			    		a {
-			    			color: $color-light;
-			    			border: 0;
-			    		}
-			    	}
-			    }
+              a {
+                color: $color-light;
+                border: 0;
+              }
+            }
+          }
 
-			}
+      }
 
-			&.dropdown:hover .dropdown-menu {
-				display: block;
-				position: absolute;
-			}
-		}
+      &.dropdown:hover .dropdown-menu {
+        display: block;
+        position: absolute;
+      }
+    }
 
-	}
+  }
 
-	.nav-trigger {
+  .nav-trigger {
       display: none;
-  	}
+    }
 
-	.menu-icon {
-	float: right;
-	width: 36px;
-	height: 26px;
-	line-height: 0;
-	padding-top: 10px;
-	text-align: center;
+  .menu-icon {
+  float: right;
+  width: 36px;
+  height: 26px;
+  line-height: 0;
+  padding-top: 10px;
+  text-align: center;
 
-	> svg path {
-	  fill: $color-light;
-	}
-	}
+  > svg path {
+    fill: $color-light;
+  }
+  }
 
-	label[for="nav-trigger"] {
-	display: block;
-	float: right;
-	width: 36px;
-	height: 36px;
-	z-index: 2;
-	cursor: pointer;
-	}
+  label[for="nav-trigger"] {
+  display: block;
+  float: right;
+  width: 36px;
+  height: 36px;
+  z-index: 2;
+  cursor: pointer;
+  }
 
-	input ~ .trigger {
-	clear: both;
-	display: none;
-	background-color: $color-light;
-	@media screen and (min-width: $on-medium) {
-		background-color: transparent;
-	}
-	}
+  input ~ .trigger {
+  clear: both;
+  display: none;
+  background-color: $color-light;
+  @media screen and (min-width: $on-medium) {
+    background-color: transparent;
+  }
+  }
 
-	input:checked ~ .trigger {
-	display: block;
-	padding-bottom: 5px;
-	}
+  input:checked ~ .trigger {
+  display: block;
+  padding-bottom: 5px;
+  }
 
   @media screen and (min-width: $on-medium) {
     position: static;
@@ -203,13 +207,17 @@ h3 {
 
 
 .post-toc {
-  display: flex;
+  display: block;
   justify-content: space-between;
   list-style: none;
   margin: 0;
   @include relative-font-size(1);
   background-color: $color-dark-blue;
   padding: 0px;
+
+  @include media-query($on-medium) {
+    display: flex;
+  }
 
   > li {
     display: inline-block;
@@ -221,25 +229,25 @@ h3 {
       display: none;
     }
     a, a:visited {
-      	color: $color-light;
+        color: $color-light;
     }
     &:hover {
-    	background-color: $color-light-bgr;
-    	border-bottom: 3px solid $color-blue;
-    	cursor: pointer;
+      background-color: $color-light-bgr;
+      border-bottom: 3px solid $color-blue;
+      cursor: pointer;
 
-	    a, a:hover {
-	    	color: $color-dark-blue;
-	    	text-decoration: none;
-	    }
+      a, a:hover {
+        color: $color-dark-blue;
+        text-decoration: none;
+      }
     }
     &.current {
-    	background-color: $color-light-bgr;
-    	border-bottom: 3px solid $color-blue;
-    	a, a:hover {
-	    	color: $color-dark-blue;
-	    	text-decoration: none;
-	    }
+      background-color: $color-light-bgr;
+      border-bottom: 3px solid $color-blue;
+      a, a:hover {
+        color: $color-dark-blue;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -256,10 +264,10 @@ h3 {
   margin-bottom: 3rem;
 
   &:first-of-type {
-  	margin-top: 3rem;
+    margin-top: 3rem;
   }
   &:last-of-type {
-  	margin-bottom: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -271,11 +279,11 @@ h3 {
   padding: 0.625rem;
 
   .post-meta, .post-breadcrumb {
-  	color: $color-grey;
+    color: $color-grey;
   }
 
   .post-snippet .ais-Highlight {
-  	color: $color-blue;
+    color: $color-blue;
   }
  }
 
@@ -287,8 +295,8 @@ h3 {
 }
 
 .btn-p {
-	text-align: center;
-	padding-bottom: 3rem;
+  text-align: center;
+  padding-bottom: 3rem;
 }
 
 a.btn {
@@ -303,10 +311,10 @@ a.btn {
   transition: all 0.4s;
 
   &:hover {
-  	background-color: darken($color-orange, 10%);
+    background-color: darken($color-orange, 10%);
   }
   &,&:hover {
-  	text-decoration: none;
+    text-decoration: none;
   }
 }
 
@@ -502,40 +510,40 @@ display: -webkit-box;
 }
 
 .tabbed {
-	display: none;
-	  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
-	  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16), 0 0px 8px rgba(0, 0, 0, 0.23);
-	  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+  display: none;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16), 0 0px 8px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.16);
 
-	  p {
-	  	padding: 0 1rem 1rem 1rem;
-	  }
-	  h3, h4 {
-	  	margin: 0 0 1rem 0;
-	  	padding: 1rem 1rem 0 1rem;
-	  }
-	  h4 {
-	  	padding: 1rem;
-	  }
+    p {
+      padding: 0 1rem 1rem 1rem;
+    }
+    h3, h4 {
+      margin: 0 0 1rem 0;
+      padding: 1rem 1rem 0 1rem;
+    }
+    h4 {
+      padding: 1rem;
+    }
 }
 .tabbed.current {display: block;}
 
 .home {
-	table {
-		tbody, thead {
-			tr {
-				td, th {
-					&:nth-child(n+3) {
-						display: none;
-						@media screen and (min-width: $on-medium) {
-							display: table-cell;
-						}
-					}
-				}
-			}
-		}
-		@include media-query($on-laptop) {
-    		display: table;
-  		}
-	}
+  table {
+    tbody, thead {
+      tr {
+        td, th {
+          &:nth-child(n+3) {
+            display: none;
+            @media screen and (min-width: $on-medium) {
+              display: table-cell;
+            }
+          }
+        }
+      }
+    }
+    @include media-query($on-laptop) {
+        display: table;
+      }
+  }
 }
