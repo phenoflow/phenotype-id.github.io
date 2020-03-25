@@ -5,9 +5,19 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col">
+        <p><img class="footer-logo" src="./../assets/img/logos/hdruk-white.png"></p>
+        <p>HDR UK {{ 'now' | date: "%Y" }}. All rights reserved</p>
+      </div>
+      <div class="footer-col">
         <p class="feed-subscribe">
+          <a href="/terms-conditions">
+            Terms & Conditions
+          </a><br>
+          <a href="/contact">
+            Contact Us
+          </a><br>
           <a href="{{ 'feed.xml' | relative_url }}">
-            <svg class="svg-icon orange">
+            <svg class="svg-icon white">
               <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
             </svg><span>Subscribe</span>
           </a>
@@ -21,10 +31,7 @@
             <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
           {%- endif %}
         </ul>
-      {%- endif %}
-      </div>
-      <div class="footer-col">
-        <p>{{ site.description | escape }}</p>
+      {%- endif %}        
       </div>
     </div>
 

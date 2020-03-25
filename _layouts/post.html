@@ -25,11 +25,13 @@ layout: default
         {% endfor %}
       {%- endif -%}</p>
   </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    <h3 id="toc">Table of Contents</h3>
-    {% include toc.html html=content %}
-    <hr>
+{% if page.collection == 'phenotypes' %}
+  <div class="post-content phenotype-content e-content pc-tab" itemprop="articleBody">
+{% else %}
+  <div class="post-content e-content pc-tab" itemprop="articleBody">
+{% endif %}
+    <!--<h3 id="toc">Table of Contents</h3>-->
+    {% include toc.html html=content class="post-toc" %}
     {{ content }}
   </div>
 
@@ -40,4 +42,4 @@ layout: default
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
-<a onclick="window.history.back()">Back</a>
+<a class="btn" onclick="window.history.back()">Back</a>

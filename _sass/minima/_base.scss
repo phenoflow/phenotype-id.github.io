@@ -105,6 +105,11 @@ li {
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
+h1, h2 {
+  font-size: $base-h2-size;
+  font-weight: bold;
+  color: $color-sea-green;
+}
 
 
 
@@ -242,6 +247,10 @@ pre {
   color: #828282;
 }
 
+.white {
+  color: #fff;
+}
+
 .svg-icon {
   width: 16px;
   height: 16px;
@@ -283,5 +292,17 @@ table {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
             -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+}
+
+.home {
+    table {
+     tbody {
+       tr {
+        &:nth-child(n+5) {
+          display: none;
+        }
+      }
+    }
   }
 }
