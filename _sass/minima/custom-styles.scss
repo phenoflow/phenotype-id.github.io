@@ -207,7 +207,7 @@ h3 {
 
 
 .post-toc {
-  display: block;
+  display: flex;
   justify-content: space-between;
   list-style: none;
   margin: 0;
@@ -216,7 +216,7 @@ h3 {
   padding: 0px;
 
   @include media-query($on-medium) {
-    display: flex;
+    flex-wrap: wrap;
   }
 
   > li {
