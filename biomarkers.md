@@ -1,9 +1,8 @@
 ---
-layout: home
+layout: page
 title: Biomarkers
 ---
 
-## Biomarkers
 {% assign biomarker_phenotypes = site.phenotypes | where: "type", "Biomarker" %}
 | ID | Phenotype | Data Sources | Validation |
 |----|-----------|--------------|------------|{% for phenotype in biomarker_phenotypes %}

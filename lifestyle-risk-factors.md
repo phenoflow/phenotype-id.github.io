@@ -1,9 +1,8 @@
 ---
-layout: home
+layout: page
 title: Lifestype Risk Factors
 ---
 
-## Lifestyle Risk factors
 {% assign lifestyle_phenotypes = site.phenotypes | where: "type", "Lifestyle Risk Factor" %}
 | ID | Phenotype | Data Sources | Validation |
 |----|-----------|--------------|------------|{% for phenotype in lifestyle_phenotypes %}

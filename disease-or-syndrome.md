@@ -1,9 +1,8 @@
 ---
-layout: home
+layout: page
 title: Disease or syndrome
 ---
 
-## Disease or syndrome
 {% assign disease_phenotypes = site.phenotypes | where: "type", "Disease or Syndrome" | sort: "phenotype_id" %}
 
 | ID | Phenotype | Data Sources | Validation |
