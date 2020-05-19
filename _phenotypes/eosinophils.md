@@ -1,8 +1,8 @@
 ---
 layout: phenotype
-title: PHE00322 - Esoinophils
+title: PHE00322 - Eosinophils
 phenotype_id: PHE00322
-name: Esoinophils
+name: Eosinophils
 type: Biomarker
 group: 
 data_sources: Primary care (CPRD), Hospital Admission Data (HES), Mortality Data (ONS)
