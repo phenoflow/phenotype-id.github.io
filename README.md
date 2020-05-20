@@ -1,4 +1,4 @@
-![powered by Jekyll](https://img.shields.io/badge/powered_by-Jekyll-red.svg) ![Netlify](https://img.shields.io/netlify/cdce00da-ce5d-4c26-ad8d-40a77947e1a4)
+![powered by Jekyll](https://img.shields.io/badge/powered_by-Jekyll-red.svg) [![Netlify](https://img.shields.io/netlify/cdce00da-ce5d-4c26-ad8d-40a77947e1a4)](https://app.netlify.com/sites/amazing-galileo-9d5b15/deploys)
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fphenotype.id) ![License](https://img.shields.io/github/license/phenotype-id/phenotype-id.github.io) [![DOI](https://zenodo.org/badge/175040221.svg)](https://zenodo.org/badge/latestdoi/175040221) [![Supported By](https://img.shields.io/badge/Supported%20By-HDR%20UK-blue)](https://hdruk.ac.uk)
 
 # HDR UK National Phenotype Library (Phenotype.ID)
